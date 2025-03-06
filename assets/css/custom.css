@@ -1,0 +1,773 @@
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
+.h2,
+h2 {
+  font-weight: 600;
+  color: #00c3ff;
+  font-size: 2.5rem;
+}
+
+.h4,
+h4 {
+  font-weight: 600;
+  color: #000;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.text-primary,
+a.white,
+a:hover {
+  color: #00c3ff !important;
+  text-decoration: none;
+}
+
+.px-6,
+.px-lg-6 {
+  padding-right: 4rem !important;
+  padding-left: 4rem !important;
+}
+
+.py-6,
+.py-lg-6 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.bg-primary {
+  background-color: #00c3ff !important;
+}
+
+.img-icon {
+  width: 123px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar.top-nav {
+  background: #00c3ff;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 10rem;
+}
+.navbar.bottom-nav {
+  background: #000000;
+  top: 5%;
+  left: 0;
+  padding: 1.3rem 9rem;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+  font-weight: 800;
+}
+
+.bg-blue {
+  background-color: #00c3ff;
+}
+
+.bg-grey {
+  background-color: #e2e2e2;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  display: none;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.carousel-item.active {
+  display: flex;
+  /* Ensure the active slide is visible */
+  opacity: 1;
+  /* Optional: fade effect */
+}
+
+.hero-right {
+  flex: 4;
+  background-size: cover;
+  height: 90vh;
+}
+
+.hero-right.half {
+  flex: 4;
+  background-size: cover;
+  height: 75vh;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  transform: translateX(-50%);
+  border-radius: 50%; /* Makes the shape round */
+  display: flex;
+  justify-content: center; /* Centers the indicators horizontally */
+  align-items: center; /* Centers the indicators vertically */
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #03c3ff;
+  width: 10px;
+  height: 10px;
+}
+.btn-explore {
+  width: 170px;
+  padding: 10px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #00c3ff;
+  /* Fine-tune placement */
+  z-index: 3;
+  font-size: 1.25rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+}
+
+.btn-explore.black {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  left: 0%;
+  transition: transform 0.2s ease-in-out;
+  animation: enlarge 1s infinite alternate ease-in-out;
+}
+
+.btn-explore:hover,
+.btn-explore.black:hover {
+  background-color: #82defa;
+  color: #000;
+}
+
+.social-links {
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links a {
+  display: block;
+  margin: 5px 0;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Add vertical lines */
+.social-links a.facebook::before,
+.social-links a.youtube::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80px;
+  background-color: #fff;
+}
+
+.social-links a.facebook::before {
+  top: -100px;
+  /* Position above Facebook */
+  left: 50%;
+  /* Center align with the icon */
+  transform: translateX(-50%);
+}
+
+.social-links a.youtube::after {
+  bottom: -100px;
+  /* Position below YouTube */
+  left: 50%;
+  /* Center align with the icon */
+  transform: translateX(-50%);
+}
+
+.about-card img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.about-card:hover {
+  /* transform: scale(1.1); */
+}
+
+.card-title {
+  color: #00c3ff;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.gray-bg {
+  background-color: #f7f7f7;
+}
+
+.team-image {
+  position: relative;
+}
+
+.team-image img {
+  height: 702px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.team2-image img {
+  height: 870px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.team-overlay {
+  position: absolute;
+  bottom: -50px;
+  left: 20%;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  color: #5093fd;
+}
+
+.flex-grow-1 {
+  width: 65%;
+}
+
+.flex-shrink-0 {
+  width: 35%;
+  text-align: right;
+  /* Align the button to the right */
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start; /* Ensures text starts aligned at the top */
+  gap: 10px; /* Adds space between icon and text */
+}
+.contact-item i {
+  font-size: 1.2rem; /* Adjust icon size */
+  width: 24px; /* Ensures icons take up equal width */
+  text-align: center; /* Centers the icon inside the space */
+  flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+.contact-item p {
+  margin: 0; /* Removes default margins for better alignment */
+  flex: 1; /* Allows the text to take up remaining space */
+}
+
+.footer-section {
+  background-color: #000000;
+  padding: 40px 0;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.footer-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-col h5 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #444;
+}
+
+.footer-border {
+  border-top: 1px solid #58565669;
+  padding: 20px;
+}
+
+/* Start state for animation */
+.section-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+/* Animation State */
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cta-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-25deg);
+  animation: shine 2s infinite;
+}
+
+/* Position text at 75% (3/4 of image height) */
+.carousel-text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  width: 80%;
+}
+
+/* Limiting the width of the text container to 60% */
+.custom-width {
+  max-width: 60%; /* Limit the width to 60% */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the element horizontally */
+  text-align: center; /* Ensures text is centered */
+}
+
+/* Typing Effect */
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap; /* Keeps typing effect sequential */
+  word-wrap: break-word; /* Allow long words to break onto the next line */
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blinkCursor 0.6s infinite;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 2px 1px 4px #777777;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* New class for blinking effect */
+.blinking-image {
+  position: relative;
+  display: block;
+  height: auto;
+  animation: blink 2s infinite alternate ease-in-out;
+}
+
+/* Blinking / twinkling effect */
+@keyframes blink {
+  0% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.8;
+    filter: brightness(1.2);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+/* Word Enlargement Effect (Triggered After Typing Finishes) */
+.highlight {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Delay the enlarging effect after typing finishes */
+.highlight:nth-child(1) {
+  animation: wordEnlarge 0.8s ease-in-out forwards 4.5s;
+}
+.highlight:nth-child(2) {
+  animation: wordEnlarge 0.8s ease-in-out forwards 5.3s;
+}
+.highlight:nth-child(3) {
+  animation: wordEnlarge 0.8s ease-in-out forwards 6.1s;
+}
+.highlight:nth-child(4) {
+  animation: wordEnlarge 0.8s ease-in-out forwards 6.9s;
+}
+
+@keyframes wordEnlarge {
+  0% {
+    transform: scale(1);
+    color: #fff;
+  }
+  50% {
+    transform: scale(1.3);
+    color: #00c3ff;
+  }
+  100% {
+    transform: scale(1);
+    color: #fff;
+  }
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0.6;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+  85% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+  100% {
+    opacity: 0.6;
+    filter: brightness(1);
+  }
+}
+
+.shining-logo {
+  animation: shine 3s infinite alternate;
+}
+
+/* Box Animation */
+.box-hover {
+  display: inline-block; /* Ensures box behaves like a block element */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+}
+
+.box-hover:hover {
+  transform: scale(1.1) translateY(-10px); /* Enlarge and move upwards */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Add shadow for lift effect */
+}
+
+/* End of animation */
+
+@media (max-width: 576px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    --bs-gutter-x: 0;
+  }
+  .h2,
+  h2 {
+    text-align: center !important;
+    font-size: 1.8rem;
+  }
+  .h4,
+  h4 {
+    font-size: 1.2rem;
+  }
+  .navbar,
+  .navbar.top-nav,
+  .navbar.bottom-nav {
+    padding: 1rem 2rem;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero-right {
+    height: 60vh !important;
+  }
+
+  .btn-explore {
+    border: none;
+    width: 140px;
+    padding: 15px;
+  }
+
+  .card-body {
+    padding: 0 25px;
+  }
+
+  .team-section {
+    padding: 0 0;
+  }
+  .team-overlay {
+    bottom: 0px;
+    left: 0;
+    padding: 30px 50px 20px 50px;
+    width: 100%;
+  }
+  .team-image img {
+    height: 300px;
+  }
+  .footer-border {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 780px) {
+  .hero-right {
+    height: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .social-links a {
+    font-size: 1.2rem;
+  }
+  .navbar.bottom-nav {
+    top: 3%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .navbar.bottom-nav {
+    padding: 1.3rem 6.5rem;
+    top: 9%;
+  }
+  .navbar.top-nav {
+    padding: 0.5rem 7rem;
+  }
+  .fs-lg-custom {
+    font-size: 1.8rem;
+    margin-top: -55px;
+  }
+  .service,
+  .service2,
+  .service3 {
+    object-fit: cover;
+    border-radius: 0;
+  }
+  .service {
+    height: 950px;
+  }
+  .service2 {
+    height: 900px;
+  }
+  .service3 {
+    height: 1017px !important;
+  }
+  .btn-explore {
+    width: 250px;
+  }
+  .social-links {
+    top: 70%;
+  }
+  .team-section {
+    padding: 70px 0;
+  }
+  .team-overlay {
+    bottom: 0;
+    left: 5%;
+    padding: 30px;
+    width: 90%;
+  }
+  .team-image img {
+    height: 714px;
+  }
+  .about-card img {
+    height: 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler-icon {
+    filter: invert(1) brightness(100%); /* Make the icon white */
+  }
+  .navbar-collapse {
+    margin-top: 20px;
+  }
+  .custom-width {
+    max-width: 100%;
+  }
+  .typing-text {
+    font-size: 1.7rem;
+    white-space: normal;
+  }
+  .hero-right.half {
+    height: 100vh;
+  }
+  .px-lg-6 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .py-lg-6 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .social-links a.facebook::before,
+  .social-links a.youtube::after {
+    display: none;
+  }
+  .social-links {
+    left: 12px;
+    top: 50%;
+    position: fixed;
+  }
+  .btn-explore {
+    font-size: 1rem;
+  }
+
+  .card-title.home {
+    height: 40px;
+  }
+  .apply-btn {
+    padding: 5px 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-w-20 {
+    flex: 0 0 20%; /* Set flex-basis to 20% */
+    max-width: 20%; /* Set max-width to 20% */
+  }
+  .h4,
+  h4 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .min-h-lg-310 {
+    min-height: 310px;
+  }
+  .min-h-lg-200 {
+    min-height: 200px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .navbar.top-nav {
+    padding: 0.5rem 6rem;
+  }
+  .navbar.bottom-nav {
+    padding: 1.3rem 5rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar.bottom-nav {
+    top: 3%;
+  }
+  .team-overlay {
+    left: 13%;
+    width: 75%;
+  }
+  .card-title.home {
+    height: 60px;
+  }
+
+  .hero,
+  .hero-right {
+    height: 40vh !important;
+    background-position: center bottom;
+  }
+  .service,
+  .service2,
+  .service3 {
+    object-fit: cover;
+    border-radius: 0;
+  }
+  .service {
+    height: 950px;
+  }
+  .service2 {
+    height: 900px;
+  }
+  .service3 {
+    height: 1017px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .navbar.bottom-nav {
+    top: 3.5%;
+  }
+  .team-image img {
+    height: 772px;
+  }
+  .service,
+  .service2,
+  .service3 {
+    object-fit: cover;
+    border-radius: 0;
+  }
+  .service {
+    height: 950px;
+  }
+  .service2 {
+    height: 900px;
+  }
+  .service3 {
+    height: 1017px !important;
+  }
+}

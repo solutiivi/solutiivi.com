@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head data-include="/includes/header.html"></head>
+  <!-- Preload Custom CSS for Faster Load -->
+  <link rel="preload" href="/assets/css/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="/assets/css/custom.css">
+  </noscript>
+  <!-- Global Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Unique Meta Tags for Homepage -->
+  <title>Customized HR Consulting and Training Solutions | Solutiivi</title>
+  <meta name="description" content="Welcome to Solutiivi, your trusted HR consultant. We streamline HR processes, from hiring and employee engagement to performance management and culture-building.
+  ">
+  <meta name="keywords" content="HR consultant, HR Training Solutions, HR consulting, HR training">
+  <link rel="canonical" href="https://solutiivi.com/">
+  </head>
+  <body>
+    <div>
+      <!-- Navbar -->
+      <div data-include="/includes/navbar.html"></div>
+    </div>
+    <!-- Hero Section Slider -->
+    <section id="heroSlider" class="carousel slide hero" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="hero-right d-block position-relative w-100 vh-100" alt="Solutiivi HR-consultancy" style="background-image: url('/assets/images/slider/Solutiivi-HR-consultancy.webp'); background-size: cover; background-position: center;">
+            <!-- Overlay Text at 75% (3/4) from the top -->
+            <div class="position-absolute start-50 translate-middle-x text-center px-lg-5 text-white custom-width" style="top: 65%;">
+              <!-- Typing Effect Applied to Entire Sentence -->
+              <h2 class="typing-container d-none d-lg-block">
+                <span class="typing-text line-one"> Bridging <span class="highlight">Talent</span> and <span class="highlight">Opportunity</span>
+                </span>
+                <span class="typing-text line-two"> for a <span class="highlight">Brighter</span>
+                  <span class="highlight">Future</span>
+                </span>
+              </h2>
+              <h2 class="typing-container fs-lg-custom d-block d-lg-none">
+                <span class="text-white"> Bridging <span class="highlight">Talent</span> and <span class="highlight">Opportunity</span> for a <span class="highlight">Brighter</span>
+                  <span class="highlight">Future</span>
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <!-- <div class="carousel-indicators"><button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button></div> -->
+    </section>
+    <section class="section-animate">
+      <div class="container text-start pt-5 pt-md-0 px-4 p-lg-5 my-md-5">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6">
+            <div class="card border-0">
+              <div class="card-body mt-auto">
+                <h2 class="pb-sm-4">About Us</h2>
+                <p class="card-text text-center text-md-start pb-0 pb-sm-2"> At Solutiivi, we’re here to help you build a thriving workplace. Our mission is to streamline HR processes, from hiring and employee engagement to performance management and culture-building. <br>
+                  <br> With a focus on strategic development, we offer customized HR consulting and training solutions designed to upskill your team, meet industry demands, and enhance productivity. Let’s tackle complex HR challenges together and position your business for sustainable success.
+                </p>
+                <div class="d-md-flex justify-content-center justify-content-lg-start gap-3 mt-4 mt-md-0">
+                  <a href="/services/" style="color: #fff !important;" class="btn btn-explore">Read More</a>
+                  <a href="/contact/" style="color: #fff !important;" class="btn btn-explore black mx-3">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 px-2 px-lg-5 d-none d-md-block">
+            <div class="card about-card border-0">
+              <img src="/assets/images/home/aboutus.webp" class="img-fluid" alt="Solutiivi About Us">
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="gray-bg section-animate mt-5 mt-md-0 pt-3 py-lg-5">
+      <div class="container px-lg-5">
+        <h2 class="text-center py-4">Why Choose Us</h2>
+        <div class="row">
+          <!-- Left Image Section -->
+          <div class="col-md-4 col-lg-5 col-xl-6 position-relative team-image px-lg-4">
+            <img src="/assets/images/home/why-choose-us.webp" class="img-fluid" alt="Why choose Solutiivi">
+          </div>
+          <!-- Right Job Listing Section -->
+          <div class="col-md-8 col-lg-7 col-xl-6 mb-5">
+            <!-- Navbar -->
+            <div data-include="/includes/whyus.html"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div data-include="/includes/footer.html"></div>
+    <!-- JavaScript -->
+    <script src="/assets/js/include.js"></script>
+    <!-- JavaScript for Letter-by-Letter Typing -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const lineOne = document.querySelector('.line-one');
+        const lineTwo = document.querySelector('.line-two');
+        // Set a delay for the second line to start typing after the first line finishes
+        lineTwo.style.animationDelay = '4s'; // Adjust this delay based on the typing speed
+      });
+    </script>
+  </body>
+</html>
