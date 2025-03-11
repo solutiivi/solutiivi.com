@@ -1,0 +1,30 @@
+____________ File to update March 2025________________
+
+#Please replace all the below file list to the latest version. 
+
+1) includes > navbar.html
+-Remove phone number
+
+2) includes > footer.html
+-Remove phone number
+
+3) css > custom.css
+-Cosmetic enhancement
+
+4) includes > scope.html
+-Cosmetic enhancement
+
+____________ Pages________________
+
+5) contact > index.html
+-Remove phone number
+
+6) services > index.html
+-Cosmetic enhancement
+
+7) industry-expertise > index.html
+-Cosmetic enhancement
+
+8) candidates > index.html
+-Cosmetic enhancement
+

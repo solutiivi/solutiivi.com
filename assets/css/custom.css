@@ -549,7 +549,9 @@ a:hover {
   .hero-right {
     height: 60vh !important;
   }
-
+  .typing-container .text-white {
+    text-shadow: 2px 1px 4px #777777;
+  }
   .btn-explore {
     border: none;
     width: 140px;
@@ -571,6 +573,9 @@ a:hover {
   }
   .team-image img {
     height: 300px;
+  }
+  .mobile-100 {
+    width: 80% !important;
   }
   .footer-border {
     padding: 10px;
